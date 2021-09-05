@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>无标题文档</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/select.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+		<script type="text/javascript" src="js/select-ui.min.js"></script>
+		<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+		<script type="text/javascript">
+			KE.show({
+				id: 'content7',
+				cssPath: './index.css'
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+				$(".select1").uedSelect({
+					width: 345
+				});
+				$(".select2").uedSelect({
+					width: 167
+				});
+				$(".select3").uedSelect({
+					width: 100
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div class="place">
+			<span>位置：</span>
+			<ul class="placeul">
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">录入学分</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="formbody">
+
+			<div id="tab1" class="tabson">
+				<ul class="forminfo">
+					
+					<li>
+						<label>姓名<b>*</b></label>
+						<input placeholder="请输入姓名" name="Input" type="text" class="dfinput" style="width:345px;" />
+					</li>
+					<li>
+						<label>学号<b>*</b></label>
+						<input placeholder="请输入学号" name="classid" type="text" class="dfinput" style="width:345px;" />
+					</li>
+					<li>
+						<label>年级<b>*</b></label>
+						<div class="vocation">
+							<select class="select1">
+								<option>请选择</option>
+								<option>大一</option>
+								<option>大二</option>
+								<option>大三</option>
+								<option>大四</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<label>院系<b>*</b></label>
+                            <div class="vocation">
+							<select class="select1">
+								<option>请选择</option>
+								<option selected="selected">软件学院</option>
+								<option>艺术学院</option>
+								<option>材料科学与工程学院</option>
+								</optio>体育学院</option>
+								<option>信息与通信工程学院</option>
+								<option>仪器与电子学院</option>
+								<option>大数据学院</option>
+								<option>经济与管理学院</option>
+								<option>人文社会科学学院</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<label>分值<b>*</b></label>
+						<input placeholder="请输入所得学分值" name="classid" type="text" class="dfinput" style="width:345px;" />
+					</li>
+				    <li>
+						<label>事由<b>*</b></label>
+						<input placeholder="请输入公开课题目" name="classid" type="text" class="dfinput" style="width:345px;" />
+					</li>
+                     <li>
+						<label>取得时间<b>*</b></label>
+						<input name="classid" type="text" class="dfinput" style="width:345px;" />
+					</li>
+                    
+					
+					 <li>
+						<label>录入时间<b>*</b></label>
+						<input name="classid" type="text" class="dfinput" style="width:345px;" />
+					</li>
+                    
+					<li><label>备注<b>*</b></label>
+
+						<textarea id="content7" name="content" style="width:700px;height:250px;visibility:hidden;"></textarea>
+					</li>
+					<li><label>&nbsp;</label><input name="" type="button" class="btn" value="提交" /></li>
+				</ul>
+
+			</div>
+
+			<div id="tab2" class="tabson">
+
+				<ul class="seachform">
+
+					<li><label>综合查询</label><input name="" type="text" class="scinput" /></li>
+					<li><label>指派</label>
+						<div class="vocation">
+							<select class="select3">
+								<option>全部</option>
+								<option>其他</option>
+							</select>
+						</div>
+					</li>
+
+					<li><label>重点客户</label>
+						<div class="vocation">
+							<select class="select3">
+								<option>全部</option>
+								<option>其他</option>
+							</select>
+						</div>
+					</li>
+
+					<li><label>客户状态</label>
+						<div class="vocation">
+							<select class="select3">
+								<option>全部</option>
+								<option>其他</option>
+							</select>
+						</div>
+					</li>
+
+					<li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询" /></li>
+
+				</ul>
+
+				<table class="tablelist">
+					<thead>
+						<tr>
+							<th><input name="" type="checkbox" value="" checked="checked" /></th>
+							<th>编号<i class="sort"><img src="images/px.gif" /></i></th>
+							<th>标题</th>
+							<th>用户</th>
+							<th>籍贯</th>
+							<th>发布时间</th>
+							<th>是否审核</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>201301</td>
+							<td>xxxxxxxxx</td>
+							<td>xx</td>
+							<td>xxxx</td>
+							<td>xxxxxxxx</td>
+							<td>已审核</td>
+							<td>
+								<a href="#" class="tablelink">查看</a>
+								<a href="#" class="tablelink"> 删除</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>201302</td>
+							<td>xxxxxxx</td>
+							<td>xxxx</td>
+							<td>xxxx</td>
+							<td>xxxxxxx</td>
+							<td>未审核</td>
+							<td>
+								<a href="#" class="tablelink">查看</a>
+								<a href="#" class="tablelink">删除</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>201303</td>
+							<td>xxxxxxxxxxxx</td>
+							<td>xxxxx</td>
+							<td>xxx</td>
+							<td>xxxxxxx</td>
+							<td>未审核</td>
+							<td>
+								<a href="#" class="tablelink">查看</a>
+								<a href="#" class="tablelink">删除</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>201304</td>
+							<td>xxxxxxxxxxxxxxx</td>
+							<td>xxx</td>
+							<td>xxx</td>
+							<td>xxxxxxxx</td>
+							<td>已审核</td>
+							<td>
+								<a href="#" class="tablelink">查看</a>
+								<a href="#" class="tablelink">删除</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>201305</td>
+							<td>xxxxxxxxxxxxxxxxxxxxxx</td>
+							<td>xxxxxxxxx</td>
+							<td>xxxxxx</td>
+							<td>xxxxx</td>
+							<td>未审核</td>
+							<td>
+								<a href="#" class="tablelink">查看</a>
+								<a href="#" class="tablelink">删除</a>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+			$("#usual1 ul").idTabs();
+		</script>
+
+		<script type="text/javascript">
+			$('.tablelist tbody tr:odd').addClass('odd');
+		</script>
+
+		</div>
+
+	</body>
+
+</html>
